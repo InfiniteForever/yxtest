@@ -1,83 +1,112 @@
 package group.yunxin.pojo;
 
-public class TbQues {
-    private Long id;
+public class TbQues
+{
+	private Long id;
 
-    private Long teacherId;
+	private Long teacherId;
 
-    private String steam;
+	private TbUser teacher;
 
-    private String explanation;
+	private String steam;
 
-    private Integer diff;
+	private String explanation;
 
-    private String answer;
+	private Integer diff;
 
-    private String pic;
+	private String answer;
 
-    private Integer kind;
+	private String pic;
 
-    public Long getId() {
-        return id;
-    }
+	private Integer kind;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	public Long getId()
+	{
+		return id;
+	}
 
-    public Long getTeacherId() {
-        return teacherId;
-    }
+	public void setId(Long id)
+	{
+		this.id = id;
+	}
 
-    public void setTeacherId(Long teacherId) {
-        this.teacherId = teacherId;
-    }
+	public Long getTeacherId()
+	{
+		return teacherId;
+	}
 
-    public String getSteam() {
-        return steam;
-    }
+	public void setTeacherId(Long teacherId)
+	{
+		this.teacherId = teacherId;
+	}
 
-    public void setSteam(String steam) {
-        this.steam = steam == null ? null : steam.trim();
-    }
+	public String getSteam()
+	{
+		return steam;
+	}
 
-    public String getExplanation() {
-        return explanation;
-    }
+	public void setSteam(String steam)
+	{
+		this.steam = steam == null ? null : steam.trim();
+	}
 
-    public void setExplanation(String explanation) {
-        this.explanation = explanation == null ? null : explanation.trim();
-    }
+	public String getExplanation()
+	{
+		return explanation;
+	}
 
-    public Integer getDiff() {
-        return diff;
-    }
+	public void setExplanation(String explanation)
+	{
+		this.explanation = explanation == null ? null : explanation.trim();
+	}
 
-    public void setDiff(Integer diff) {
-        this.diff = diff;
-    }
+	public Integer getDiff()
+	{
+		return diff;
+	}
 
-    public String getAnswer() {
-        return answer;
-    }
+	public void setDiff(Integer diff)
+	{
+		this.diff = diff;
+	}
 
-    public void setAnswer(String answer) {
-        this.answer = answer == null ? null : answer.trim();
-    }
+	public String getAnswer()
+	{
+		return answer;
+	}
 
-    public String getPic() {
-        return pic;
-    }
+	public void setAnswer(String answer)
+	{
+		this.answer = answer == null ? null : answer.trim();
+	}
 
-    public void setPic(String pic) {
-        this.pic = pic == null ? null : pic.trim();
-    }
+	public String getPic()
+	{
+		return pic;
+	}
 
-    public Integer getKind() {
-        return kind;
-    }
+	public void setPic(String pic)
+	{
+		this.pic = pic == null ? null : pic.trim();
+	}
 
-    public void setKind(Integer kind) {
-        this.kind = kind;
-    }
+	public Integer getKind()
+	{
+		return kind;
+	}
+
+	public void setKind(Integer kind)
+	{
+		this.kind = kind;
+	}
+
+	public TbUser getTeacher()
+	{
+		return teacher;
+	}
+
+	public void setTeacher(TbUser teacher)
+	{
+		this.teacher = teacher;
+	}
 }

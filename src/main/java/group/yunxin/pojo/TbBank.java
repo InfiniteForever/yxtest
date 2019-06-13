@@ -14,6 +14,8 @@ public class TbBank implements Serializable
 	private String name;
 
 	private Long teacherId;
+	
+	private TbUser teacher;
 
 	private Date createTime;
 
@@ -79,11 +81,14 @@ public class TbBank implements Serializable
 		this.updateTime = updateTime;
 	}
 
-	@Override
-	public String toString()
+	public TbUser getTeacher()
 	{
-		return "TbBank [id=" + id + ", describe=" + describe + ", name=" + name + ", teacherId=" + teacherId
-				+ ", createTime=" + createTime + ", updateTime=" + updateTime + "]";
+		return teacher;
+	}
+
+	public void setTeacher(TbUser teacher)
+	{
+		this.teacher = teacher;
 	}
 
 }

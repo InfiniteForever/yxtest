@@ -1,23 +1,28 @@
 package group.yunxin.pojo;
 
-public class TbClassUser {
-    private Long userId;
+public class TbClassUser
+{
+	private Long userId;
 
-    private Long classId;
+	private Long classId;
 
-    public Long getUserId() {
-        return userId;
-    }
+	public Long getUserId()
+	{
+		return userId;
+	}
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
-    }
+	public void setUserId(Long userId)
+	{
+		this.userId = userId;
+	}
 
-    public Long getClassId() {
-        return classId;
-    }
+	public Long getClassId()
+	{
+		return classId;
+	}
 
-    public void setClassId(Long classId) {
-        this.classId = classId;
-    }
+	public void setClassId(Long classId)
+	{
+		this.classId = classId;
+	}
 }

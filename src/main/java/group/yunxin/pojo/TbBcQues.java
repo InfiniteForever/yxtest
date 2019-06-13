@@ -1,33 +1,57 @@
 package group.yunxin.pojo;
 
-public class TbBcQues {
-    private Long quesId;
+import java.io.Serializable;
 
-    private String result;
+public class TbBcQues implements Serializable
+{
+	private static final long serialVersionUID = -1129248154068404710L;
 
-    private String language;
+	private Long quesId;
+	
+	private TbQues ques;
 
-    public Long getQuesId() {
-        return quesId;
-    }
+	private String result;
 
-    public void setQuesId(Long quesId) {
-        this.quesId = quesId;
-    }
+	private String language;
 
-    public String getResult() {
-        return result;
-    }
+	public Long getQuesId()
+	{
+		return quesId;
+	}
 
-    public void setResult(String result) {
-        this.result = result == null ? null : result.trim();
-    }
+	public void setQuesId(Long quesId)
+	{
+		this.quesId = quesId;
+	}
 
-    public String getLanguage() {
-        return language;
-    }
+	public String getResult()
+	{
+		return result;
+	}
 
-    public void setLanguage(String language) {
-        this.language = language == null ? null : language.trim();
-    }
+	public void setResult(String result)
+	{
+		this.result = result == null ? null : result.trim();
+	}
+
+	public String getLanguage()
+	{
+		return language;
+	}
+
+	public void setLanguage(String language)
+	{
+		this.language = language == null ? null : language.trim();
+	}
+
+	public TbQues getQues()
+	{
+		return ques;
+	}
+
+	public void setQues(TbQues ques)
+	{
+		this.ques = ques;
+	}
+	
 }

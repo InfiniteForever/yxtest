@@ -1,63 +1,88 @@
 package group.yunxin.pojo;
 
-public class TbXzQues {
-    private Long quesId;
+public class TbXzQues
+{
+	private Long quesId;
+	
+	private TbQues ques;
 
-    private String opa;
+	private String opa;
 
-    private String opb;
+	private String opb;
 
-    private String opc;
+	private String opc;
 
-    private String opd;
+	private String opd;
 
-    private Integer type;
+	private Integer type;
 
-    public Long getQuesId() {
-        return quesId;
-    }
+	public Long getQuesId()
+	{
+		return quesId;
+	}
 
-    public void setQuesId(Long quesId) {
-        this.quesId = quesId;
-    }
+	public void setQuesId(Long quesId)
+	{
+		this.quesId = quesId;
+	}
 
-    public String getOpa() {
-        return opa;
-    }
+	public String getOpa()
+	{
+		return opa;
+	}
 
-    public void setOpa(String opa) {
-        this.opa = opa == null ? null : opa.trim();
-    }
+	public void setOpa(String opa)
+	{
+		this.opa = opa == null ? null : opa.trim();
+	}
 
-    public String getOpb() {
-        return opb;
-    }
+	public String getOpb()
+	{
+		return opb;
+	}
 
-    public void setOpb(String opb) {
-        this.opb = opb == null ? null : opb.trim();
-    }
+	public void setOpb(String opb)
+	{
+		this.opb = opb == null ? null : opb.trim();
+	}
 
-    public String getOpc() {
-        return opc;
-    }
+	public String getOpc()
+	{
+		return opc;
+	}
 
-    public void setOpc(String opc) {
-        this.opc = opc == null ? null : opc.trim();
-    }
+	public void setOpc(String opc)
+	{
+		this.opc = opc == null ? null : opc.trim();
+	}
 
-    public String getOpd() {
-        return opd;
-    }
+	public String getOpd()
+	{
+		return opd;
+	}
 
-    public void setOpd(String opd) {
-        this.opd = opd == null ? null : opd.trim();
-    }
+	public void setOpd(String opd)
+	{
+		this.opd = opd == null ? null : opd.trim();
+	}
 
-    public Integer getType() {
-        return type;
-    }
+	public Integer getType()
+	{
+		return type;
+	}
 
-    public void setType(Integer type) {
-        this.type = type;
-    }
+	public void setType(Integer type)
+	{
+		this.type = type;
+	}
+
+	public TbQues getQues()
+	{
+		return ques;
+	}
+
+	public void setQues(TbQues ques)
+	{
+		this.ques = ques;
+	}
 }

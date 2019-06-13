@@ -2,84 +2,125 @@ package group.yunxin.pojo;
 
 import java.util.Date;
 
-public class TbTransRecord {
-    private Long id;
+public class TbTransRecord
+{
+	private Long id;
 
-    private Long buyerId;
+	private Long buyerId;
 
-    private Long sellerId;
+	private TbUser buyer;
 
-    private Date time;
+	private Long sellerId;
 
-    private String title;
+	private TbUser seller;
 
-    private Double pointNum;
+	private Date time;
 
-    private Long paperId;
+	private String title;
 
-    private Integer status;
+	private Double pointNum;
 
-    public Long getId() {
-        return id;
-    }
+	private Long paperId;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	private Integer status;
 
-    public Long getBuyerId() {
-        return buyerId;
-    }
+	public Long getId()
+	{
+		return id;
+	}
 
-    public void setBuyerId(Long buyerId) {
-        this.buyerId = buyerId;
-    }
+	public void setId(Long id)
+	{
+		this.id = id;
+	}
 
-    public Long getSellerId() {
-        return sellerId;
-    }
+	public Long getBuyerId()
+	{
+		return buyerId;
+	}
 
-    public void setSellerId(Long sellerId) {
-        this.sellerId = sellerId;
-    }
+	public void setBuyerId(Long buyerId)
+	{
+		this.buyerId = buyerId;
+	}
 
-    public Date getTime() {
-        return time;
-    }
+	public Long getSellerId()
+	{
+		return sellerId;
+	}
 
-    public void setTime(Date time) {
-        this.time = time;
-    }
+	public void setSellerId(Long sellerId)
+	{
+		this.sellerId = sellerId;
+	}
 
-    public String getTitle() {
-        return title;
-    }
+	public Date getTime()
+	{
+		return time;
+	}
 
-    public void setTitle(String title) {
-        this.title = title == null ? null : title.trim();
-    }
+	public void setTime(Date time)
+	{
+		this.time = time;
+	}
 
-    public Double getPointNum() {
-        return pointNum;
-    }
+	public String getTitle()
+	{
+		return title;
+	}
 
-    public void setPointNum(Double pointNum) {
-        this.pointNum = pointNum;
-    }
+	public void setTitle(String title)
+	{
+		this.title = title == null ? null : title.trim();
+	}
 
-    public Long getPaperId() {
-        return paperId;
-    }
+	public Double getPointNum()
+	{
+		return pointNum;
+	}
 
-    public void setPaperId(Long paperId) {
-        this.paperId = paperId;
-    }
+	public void setPointNum(Double pointNum)
+	{
+		this.pointNum = pointNum;
+	}
 
-    public Integer getStatus() {
-        return status;
-    }
+	public Long getPaperId()
+	{
+		return paperId;
+	}
 
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
+	public void setPaperId(Long paperId)
+	{
+		this.paperId = paperId;
+	}
+
+	public Integer getStatus()
+	{
+		return status;
+	}
+
+	public void setStatus(Integer status)
+	{
+		this.status = status;
+	}
+
+	public TbUser getBuyer()
+	{
+		return buyer;
+	}
+
+	public void setBuyer(TbUser buyer)
+	{
+		this.buyer = buyer;
+	}
+
+	public TbUser getSeller()
+	{
+		return seller;
+	}
+
+	public void setSeller(TbUser seller)
+	{
+		this.seller = seller;
+	}
 }

@@ -1,43 +1,64 @@
 package group.yunxin.pojo;
 
-public class TbClass {
-    private Long id;
+public class TbClass
+{
+	private Long id;
 
-    private String name;
+	private String name;
 
-    private String description;
+	private String description;
 
-    private Long teacherId;
+	private Long teacherId;
 
-    public Long getId() {
-        return id;
-    }
+	private TbUser teacher;
+	
+	public Long getId()
+	{
+		return id;
+	}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	public void setId(Long id)
+	{
+		this.id = id;
+	}
 
-    public String getName() {
-        return name;
-    }
+	public String getName()
+	{
+		return name;
+	}
 
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
-    }
+	public void setName(String name)
+	{
+		this.name = name == null ? null : name.trim();
+	}
 
-    public String getDescription() {
-        return description;
-    }
+	public String getDescription()
+	{
+		return description;
+	}
 
-    public void setDescription(String description) {
-        this.description = description == null ? null : description.trim();
-    }
+	public void setDescription(String description)
+	{
+		this.description = description == null ? null : description.trim();
+	}
 
-    public Long getTeacherId() {
-        return teacherId;
-    }
+	public Long getTeacherId()
+	{
+		return teacherId;
+	}
 
-    public void setTeacherId(Long teacherId) {
-        this.teacherId = teacherId;
-    }
+	public void setTeacherId(Long teacherId)
+	{
+		this.teacherId = teacherId;
+	}
+
+	public TbUser getTeacher()
+	{
+		return teacher;
+	}
+
+	public void setTeacher(TbUser teacher)
+	{
+		this.teacher = teacher;
+	}
 }

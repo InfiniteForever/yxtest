@@ -1,33 +1,52 @@
 package group.yunxin.pojo;
 
-public class TbJdQues {
-    private Long quesId;
+public class TbJdQues
+{
+	private Long quesId;
 
-    private Integer minLength;
+	private TbQues ques;
 
-    private Integer maxLength;
+	private Integer minLength;
 
-    public Long getQuesId() {
-        return quesId;
-    }
+	private Integer maxLength;
 
-    public void setQuesId(Long quesId) {
-        this.quesId = quesId;
-    }
+	public Long getQuesId()
+	{
+		return quesId;
+	}
 
-    public Integer getMinLength() {
-        return minLength;
-    }
+	public void setQuesId(Long quesId)
+	{
+		this.quesId = quesId;
+	}
 
-    public void setMinLength(Integer minLength) {
-        this.minLength = minLength;
-    }
+	public Integer getMinLength()
+	{
+		return minLength;
+	}
 
-    public Integer getMaxLength() {
-        return maxLength;
-    }
+	public void setMinLength(Integer minLength)
+	{
+		this.minLength = minLength;
+	}
 
-    public void setMaxLength(Integer maxLength) {
-        this.maxLength = maxLength;
-    }
+	public Integer getMaxLength()
+	{
+		return maxLength;
+	}
+
+	public void setMaxLength(Integer maxLength)
+	{
+		this.maxLength = maxLength;
+	}
+
+	public TbQues getQues()
+	{
+		return ques;
+	}
+
+	public void setQues(TbQues ques)
+	{
+		this.ques = ques;
+	}
 }
