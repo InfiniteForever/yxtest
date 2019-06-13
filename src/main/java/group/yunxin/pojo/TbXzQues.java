@@ -1,0 +1,63 @@
+package group.yunxin.pojo;
+
+public class TbXzQues {
+    private Long quesId;
+
+    private String opa;
+
+    private String opb;
+
+    private String opc;
+
+    private String opd;
+
+    private Integer type;
+
+    public Long getQuesId() {
+        return quesId;
+    }
+
+    public void setQuesId(Long quesId) {
+        this.quesId = quesId;
+    }
+
+    public String getOpa() {
+        return opa;
+    }
+
+    public void setOpa(String opa) {
+        this.opa = opa == null ? null : opa.trim();
+    }
+
+    public String getOpb() {
+        return opb;
+    }
+
+    public void setOpb(String opb) {
+        this.opb = opb == null ? null : opb.trim();
+    }
+
+    public String getOpc() {
+        return opc;
+    }
+
+    public void setOpc(String opc) {
+        this.opc = opc == null ? null : opc.trim();
+    }
+
+    public String getOpd() {
+        return opd;
+    }
+
+    public void setOpd(String opd) {
+        this.opd = opd == null ? null : opd.trim();
+    }
+
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
+}

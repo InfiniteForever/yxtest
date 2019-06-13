@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: lenovo
+Build-Jdk: 11.0.2
+Implementation-Title: yxtest
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: yunxin.group
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/yxtest
+Created-By: Maven Integration for Eclipse
+
