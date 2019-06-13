@@ -1,7 +1,14 @@
 package group.yunxin.pojo;
 
-public class TbQuesBank
+import java.io.Serializable;
+
+public class TbQuesBank implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 63337467703091632L;
+
 	private Long quesId;
 
 	private Long bankId;
@@ -25,4 +32,12 @@ public class TbQuesBank
 	{
 		this.bankId = bankId;
 	}
+
+	@Override
+	public String toString()
+	{
+		return "TbQuesBank [quesId=" + quesId + ", bankId=" + bankId + "]";
+	}
+	
+	
 }

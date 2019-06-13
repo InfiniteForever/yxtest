@@ -1,9 +1,15 @@
 package group.yunxin.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class TbTransRecord
+public class TbTransRecord implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2049349067802483376L;
+
 	private Long id;
 
 	private Long buyerId;
@@ -123,4 +129,14 @@ public class TbTransRecord
 	{
 		this.seller = seller;
 	}
+
+	@Override
+	public String toString()
+	{
+		return "TbTransRecord [id=" + id + ", buyerId=" + buyerId + ", buyer=" + buyer + ", sellerId=" + sellerId
+				+ ", seller=" + seller + ", time=" + time + ", title=" + title + ", pointNum=" + pointNum + ", paperId="
+				+ paperId + ", status=" + status + "]";
+	}
+	
+	
 }

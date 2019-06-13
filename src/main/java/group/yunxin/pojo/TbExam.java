@@ -1,9 +1,15 @@
 package group.yunxin.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class TbExam
+public class TbExam implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7286797014304512038L;
+
 	private Long id;
 
 	private String title;
@@ -207,4 +213,16 @@ public class TbExam
 	{
 		this.teacher = teacher;
 	}
+
+	@Override
+	public String toString()
+	{
+		return "TbExam [id=" + id + ", title=" + title + ", teacherId=" + teacherId + ", teacher=" + teacher
+				+ ", createTime=" + createTime + ", needCamera=" + needCamera + ", isPublic=" + isPublic + ", price="
+				+ price + ", diff=" + diff + ", timeStart=" + timeStart + ", timeStop=" + timeStop
+				+ ", timePublicMarks=" + timePublicMarks + ", timeLast=" + timeLast + ", maxSwitch=" + maxSwitch
+				+ ", allowBrowseAfterTime=" + allowBrowseAfterTime + ", marks=" + marks + ", totalMark=" + totalMark
+				+ "]";
+	}
+	
 }

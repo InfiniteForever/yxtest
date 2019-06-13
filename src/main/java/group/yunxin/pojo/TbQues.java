@@ -1,7 +1,14 @@
 package group.yunxin.pojo;
 
-public class TbQues
+import java.io.Serializable;
+
+public class TbQues implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4545970568294077755L;
+
 	private Long id;
 
 	private Long teacherId;
@@ -109,4 +116,14 @@ public class TbQues
 	{
 		this.teacher = teacher;
 	}
+
+	@Override
+	public String toString()
+	{
+		return "TbQues [id=" + id + ", teacherId=" + teacherId + ", teacher=" + teacher + ", steam=" + steam
+				+ ", explanation=" + explanation + ", diff=" + diff + ", answer=" + answer + ", pic=" + pic + ", kind="
+				+ kind + "]";
+	}
+	
+	
 }

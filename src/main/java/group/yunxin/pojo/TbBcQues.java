@@ -53,5 +53,11 @@ public class TbBcQues implements Serializable
 	{
 		this.ques = ques;
 	}
+
+	@Override
+	public String toString()
+	{
+		return "TbBcQues [quesId=" + quesId + ", ques=" + ques + ", result=" + result + ", language=" + language + "]";
+	}
 	
 }

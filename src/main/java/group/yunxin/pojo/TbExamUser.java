@@ -1,7 +1,14 @@
 package group.yunxin.pojo;
 
-public class TbExamUser
+import java.io.Serializable;
+
+public class TbExamUser implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -904024614181926285L;
+
 	private Long examId;
 
 	private Long userId;
@@ -25,4 +32,12 @@ public class TbExamUser
 	{
 		this.userId = userId;
 	}
+
+	@Override
+	public String toString()
+	{
+		return "TbExamUser [examId=" + examId + ", userId=" + userId + "]";
+	}
+	
+	
 }

@@ -91,4 +91,11 @@ public class TbBank implements Serializable
 		this.teacher = teacher;
 	}
 
+	@Override
+	public String toString()
+	{
+		return "TbBank [id=" + id + ", describe=" + describe + ", name=" + name + ", teacherId=" + teacherId
+				+ ", teacher=" + teacher + ", createTime=" + createTime + ", updateTime=" + updateTime + "]";
+	}
+
 }

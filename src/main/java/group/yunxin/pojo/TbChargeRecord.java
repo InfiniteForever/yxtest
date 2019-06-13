@@ -1,9 +1,17 @@
 package group.yunxin.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class TbChargeRecord
+public class TbChargeRecord implements Serializable
 {
+	
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1910025947071552644L;
+
 	private Long id;
 
 	private String title;
@@ -98,5 +106,11 @@ public class TbChargeRecord
 	public void setUser(TbUser user)
 	{
 		this.user = user;
+	}
+	@Override
+	public String toString()
+	{
+		return "TbChargeRecord [id=" + id + ", title=" + title + ", userId=" + userId + ", user=" + user + ", time="
+				+ time + ", moneyNum=" + moneyNum + ", pointNum=" + pointNum + ", status=" + status + "]";
 	}
 }

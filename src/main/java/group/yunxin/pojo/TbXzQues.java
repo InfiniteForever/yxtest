@@ -1,7 +1,14 @@
 package group.yunxin.pojo;
 
-public class TbXzQues
+import java.io.Serializable;
+
+public class TbXzQues implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -106116081536520577L;
+
 	private Long quesId;
 	
 	private TbQues ques;
@@ -85,4 +92,12 @@ public class TbXzQues
 	{
 		this.ques = ques;
 	}
+
+	@Override
+	public String toString()
+	{
+		return "TbXzQues [quesId=" + quesId + ", ques=" + ques + ", opa=" + opa + ", opb=" + opb + ", opc=" + opc
+				+ ", opd=" + opd + ", type=" + type + "]";
+	}
+	
 }

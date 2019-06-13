@@ -1,7 +1,14 @@
 package group.yunxin.pojo;
 
-public class TbOneAnswer
+import java.io.Serializable;
+
+public class TbOneAnswer implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8254841583054916770L;
+
 	private Long id;
 
 	private Long paperId;
@@ -85,4 +92,13 @@ public class TbOneAnswer
 	{
 		this.ques = ques;
 	}
+
+	@Override
+	public String toString()
+	{
+		return "TbOneAnswer [id=" + id + ", paperId=" + paperId + ", paper=" + paper + ", quesId=" + quesId + ", ques="
+				+ ques + ", answer=" + answer + ", mark=" + mark + "]";
+	}
+	
+	
 }

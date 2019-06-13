@@ -1,7 +1,14 @@
 package group.yunxin.pojo;
 
-public class TbExamQues
+import java.io.Serializable;
+
+public class TbExamQues implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7384691284575079464L;
+
 	private Long examId;
 
 	private Long quesId;
@@ -25,4 +32,12 @@ public class TbExamQues
 	{
 		this.quesId = quesId;
 	}
+
+	@Override
+	public String toString()
+	{
+		return "TbExamQues [examId=" + examId + ", quesId=" + quesId + "]";
+	}
+	
+	
 }

@@ -1,7 +1,11 @@
 package group.yunxin.pojo;
 
-public class TbCategory
+import java.io.Serializable;
+
+public class TbCategory implements Serializable
 {
+	private static final long serialVersionUID = -4747591264357147820L;
+
 	private Long id;
 
 	private String name;
@@ -49,4 +53,11 @@ public class TbCategory
 	{
 		this.from = from;
 	}
+
+	@Override
+	public String toString()
+	{
+		return "TbCategory [id=" + id + ", name=" + name + ", fromId=" + fromId + ", from=" + from + "]";
+	}
+	
 }

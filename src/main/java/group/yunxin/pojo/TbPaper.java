@@ -1,9 +1,15 @@
 package group.yunxin.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class TbPaper
+public class TbPaper implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 3643375465909328882L;
+
 	private Long id;
 
 	private Long examId;
@@ -159,4 +165,15 @@ public class TbPaper
 	{
 		this.student = student;
 	}
+
+	@Override
+	public String toString()
+	{
+		return "TbPaper [id=" + id + ", examId=" + examId + ", exam=" + exam + ", studentId=" + studentId + ", student="
+				+ student + ", timeEnter=" + timeEnter + ", timeSubmit=" + timeSubmit + ", actualMarks=" + actualMarks
+				+ ", numSwitch=" + numSwitch + ", num1=" + num1 + ", num2=" + num2 + ", num3=" + num3 + ", status="
+				+ status + "]";
+	}
+	
+	
 }

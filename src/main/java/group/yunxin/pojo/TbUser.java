@@ -1,7 +1,14 @@
 package group.yunxin.pojo;
 
-public class TbUser
+import java.io.Serializable;
+
+public class TbUser implements Serializable
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5319101519269817826L;
+
 	private Long id;
 
 	private String password;
@@ -145,4 +152,14 @@ public class TbUser
 	{
 		this.back2 = back2 == null ? null : back2.trim();
 	}
+
+	@Override
+	public String toString()
+	{
+		return "TbUser [id=" + id + ", password=" + password + ", name=" + name + ", pic=" + pic + ", email=" + email
+				+ ", qq=" + qq + ", weichat=" + weichat + ", detail=" + detail + ", points=" + points + ", role=" + role
+				+ ", back1=" + back1 + ", back2=" + back2 + "]";
+	}
+	
+	
 }
