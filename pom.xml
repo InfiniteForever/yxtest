@@ -33,7 +33,7 @@
 					<target>1.8</target>
 					<archive>
 						<manifest>
-							<mainClass>cn.yealon.start.Application</mainClass>
+							<mainClass>group.yunxin.start.Application</mainClass>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
 						</manifest>

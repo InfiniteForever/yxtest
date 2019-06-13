@@ -8,7 +8,6 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @MapperScan(value = "group.yunxin.mapper")
-@EnableAutoConfiguration
 @SpringBootApplication(scanBasePackages = "group.yunxin.*")
 public class Application extends SpringBootServletInitializer
 {
